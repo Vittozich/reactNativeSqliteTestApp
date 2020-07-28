@@ -40,7 +40,7 @@ export default function ViewAllUser(props) {
         keyExtractor={(item, index) => index.toString()}
         renderItem={({item}) => (
           <MyView
-            key={item.user_id}
+            key={item.id}
             style={{backgroundColor: primary.background, padding: 20}}>
             <MyText>
               {t.u_id}: {item.id}

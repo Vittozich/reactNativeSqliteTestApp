@@ -21,63 +21,70 @@ const headerStyles = {
 };
 const headerTintColor = primary.text;
 
-const App = createStackNavigator({
-  Home: {
-    screen: HomeScreen,
-    navigationOptions: {
-      headerStyle: headerStyles,
-      headerTintColor: headerTintColor,
+const AppContainer = createAppContainer(
+  createStackNavigator({
+    Home: {
+      screen: HomeScreen,
+      navigationOptions: {
+        headerStyle: headerStyles,
+        headerTintColor: headerTintColor,
+      },
     },
-  },
-  View: {
-    screen: ViewUser,
-    navigationOptions: {
-      headerStyle: headerStyles,
-      headerTintColor: headerTintColor,
+    View: {
+      screen: ViewUser,
+      navigationOptions: {
+        headerStyle: headerStyles,
+        headerTintColor: headerTintColor,
+      },
     },
-  },
 
-  ViewId: {
-    screen: ViewUserId,
-    navigationOptions: {
-      headerStyle: headerStyles,
-      headerTintColor: headerTintColor,
+    ViewId: {
+      screen: ViewUserId,
+      navigationOptions: {
+        headerStyle: headerStyles,
+        headerTintColor: headerTintColor,
+      },
     },
-  },
-  ViewAll: {
-    screen: ViewAllUser,
-    navigationOptions: {
-      headerStyle: headerStyles,
-      headerTintColor: headerTintColor,
+    ViewAll: {
+      screen: ViewAllUser,
+      navigationOptions: {
+        headerStyle: headerStyles,
+        headerTintColor: headerTintColor,
+      },
     },
-  },
-  Update: {
-    screen: UpdateUser,
-    navigationOptions: {
-      headerStyle: headerStyles,
-      headerTintColor: headerTintColor,
+    Update: {
+      screen: UpdateUser,
+      navigationOptions: {
+        headerStyle: headerStyles,
+        headerTintColor: headerTintColor,
+      },
     },
-  },
-  Register: {
-    screen: RegisterUser,
-    navigationOptions: {
-      headerStyle: headerStyles,
-      headerTintColor: headerTintColor,
+    Register: {
+      screen: RegisterUser,
+      navigationOptions: {
+        headerStyle: headerStyles,
+        headerTintColor: headerTintColor,
+      },
     },
-  },
-  Delete: {
-    screen: DeleteUser,
-    navigationOptions: {
-      headerStyle: headerStyles,
-      headerTintColor: headerTintColor,
+    Delete: {
+      screen: DeleteUser,
+      navigationOptions: {
+        headerStyle: headerStyles,
+        headerTintColor: headerTintColor,
+      },
     },
-  },
-  Language: {
-    screen: LanguageSelectionScreen,
-    navigationOptions: {
-      headerStyle: headerStyles,
-      headerTintColor: headerTintColor,
+    Language: {
+      screen: LanguageSelectionScreen,
+      navigationOptions: {
+        headerStyle: headerStyles,
+        headerTintColor: headerTintColor,
+      },
     },
-  },
-});
-export default createAppContainer(App);
+  }),
+);
+
+const App = props => {
+  return <AppContainer />;
+};
+
+export default App;

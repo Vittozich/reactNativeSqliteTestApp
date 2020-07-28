@@ -12,6 +12,8 @@ also console commands doesn't work. Angular tool that is not worse than React.
 
 ### `learning difficulty level: 6 of 10`
 
+### DO NOT CLONE THIS APP TO CREATE NEW, for correct use code from this app needs to create new react-native app and put inside code from this example!!!
+
 I start my template with [This good template](https://aboutreact.com/example-of-sqlite-database-in-react-native/)
 
 But this template with `classes` and I remake this to functions
@@ -19,11 +21,7 @@ But this template with `classes` and I remake this to functions
 
 ## Installed dependences
 
-When download or clone App:
-
-    npm install
-
-All:
+When create new react-native app and put code from this repository needs to install that libs:
 
     npm install react-navigation --save
     npm install react-native-gesture-handler react-native-safe-area-context @react-native-community/masked-view react-native-screens react-native-reanimated --save
